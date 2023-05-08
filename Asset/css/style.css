@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(../Police/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Space_Grotesk_Bold';
+    src: url(../Police/SpaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Space_Grotesk_Regular';
+    src: url(../Police/SpaceGrotesk-Regular.ttf);
+}
+
+:root{
+    --color-yellow-01: #ffff00;
+    --color-yellow-02: #f8f184;
+    --color-blue: #19587d75;
+    --color-red-01: #b11313;
+    --color-red-02: #8900098e;
+    --color-black-01: #000000;
+    --color-black-02: #0d0e098c;
+    --color-gray-01: #c4c4c4a2;
+    --color-gray-02: #eddebf8a;
+    --color-white: #ffffff;
+    --color-border: #bcbbbd13;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-black-01);
+    color: var(--color-white);
+}
+
+.container{
+    width: 86%;
+    margin: auto;
+    border-left: 2px solid var(--color-border) ;
+    border-right: 2px solid var(--color-border) ;
+}
+                            /*      Desing Barre de navigation      */
+#header{
+    height: 900px;
+    background-image: url(../Illustrations/Bathome1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-black-02);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 55px 55px 75px 55px;
+    justify-content: space-between;
+    background-position: top center;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.logo:hover{
+    filter: invert(20%) sepia(80%) saturate(4740%) hue-rotate(340deg)
+    brightness(160%) contrast(140%);
+}
+
+ul a{
+    text-decoration: underline;
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    color: var(--color-white);
+}
+
+ul a:hover{
+    color: var(--color-yellow-01);
+    font-weight: bold;
+}
+
+ul a:active{
+    color: var(--color-yellow-01);
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
