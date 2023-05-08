@@ -44,6 +44,12 @@ body{
     border-left: 2px solid var(--color-border) ;
     border-right: 2px solid var(--color-border) ;
 }
+
+.titre{
+    padding: 40px;
+    font-family: 'Space_Grotesk_Bold';
+    font-size: 26px;
+}
                             /*      Desing Barre de navigation      */
 #header{
     height: 900px;
@@ -113,4 +119,57 @@ li{
     margin: 45px;
     z-index: 100;
 }
+                            /*      Desing Contenue header      */
+.content{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 230px;
+}
 
+.content p{
+    font-size: 21px;
+    font-family: 'Space_Grotesk_Regular';
+}
+                            /*      Desing les 2 buttons      */
+.btn{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    padding: 10px 50px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: var(--color-black-01) 10px 10px 60px;
+    margin: 12px;
+    color: var(--color-white);
+    background: linear-gradient(
+        70deg,
+        rgba(245, 220, 180, 0.2) 40%,
+        rgba(140, 0, 8, 0.2) 60%
+    );
+}
+
+.btn:hover{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    color: var(--color-white);
+    padding: 10px 50px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(
+      50deg,
+      var(--color-gray-02) 40%,
+      var(--color-red-02) 60%
+    );
+    box-shadow: black 10px 10px 60px;
+    margin: 20px;
+}
+
+.fleche {
+    display: block;
+    margin: auto;
+    width: 80px;
+    padding-top: 320px;
+}
