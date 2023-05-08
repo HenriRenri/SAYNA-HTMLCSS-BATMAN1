@@ -67,7 +67,8 @@ nav{
     height: auto;
 }
 
-.logo:hover{
+.logo:hover,
+.logo_social img:hover{
     filter: invert(20%) sepia(80%) saturate(4740%) hue-rotate(340deg)
     brightness(160%) contrast(140%);
 }
@@ -91,5 +92,25 @@ ul a:active{
 
 li{
     list-style: none;
+}
+
+                            /*      Desing Scroll Barre      */
+.scroll_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 3%;
+    top: 250px;
+    z-index: 100;
+}
+
+.logo_social img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35px;
+    margin: 45px;
+    z-index: 100;
 }
 
