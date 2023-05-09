@@ -18,11 +18,11 @@
     --color-yellow-02: #f8f184;
     --color-blue: #19587d75;
     --color-red-01: #b11313;
-    --color-red-02: #8900098e;
+    --color-red-02: #890009;
     --color-black-01: #000000;
     --color-black-02: #0d0e098c;
     --color-gray-01: #c4c4c4a2;
-    --color-gray-02: #eddebf8a;
+    --color-gray-02: #eddebfe0;
     --color-white: #ffffff;
     --color-border: #bcbbbd13;
 }
@@ -49,6 +49,26 @@ body{
     padding: 40px;
     font-family: 'Space_Grotesk_Bold';
     font-size: 26px;
+}
+
+.description{
+    width: 88%;
+    padding: 40px;
+    text-align: justify;
+    line-height: 22px;
+    font-family: 'Space_Grotesk_Regular';
+    font-size: 18px;
+}
+
+.personnage div:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s ease-in-out;
+    transform-origin: center;
+}
+
+.info_perso{
+    text-align: center;
+    margin-bottom: 40px;
 }
                             /*      Desing Barre de navigation      */
 #header{
@@ -106,7 +126,7 @@ li{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 3%;
+    right: 2.45%;
     top: 250px;
     z-index: 100;
 }
@@ -146,8 +166,8 @@ li{
     color: var(--color-white);
     background: linear-gradient(
         70deg,
-        rgba(245, 220, 180, 0.2) 40%,
-        rgba(140, 0, 8, 0.2) 60%
+        rgba(245, 220, 180, 0.493) 40%,
+        rgba(140, 0, 7, 0.37) 60%
     );
 }
 
@@ -159,17 +179,27 @@ li{
     text-decoration: none;
     display: inline-block;
     background: linear-gradient(
-      50deg,
+      80deg,
       var(--color-gray-02) 40%,
       var(--color-red-02) 60%
     );
-    box-shadow: black 10px 10px 60px;
-    margin: 20px;
+    box-shadow: var(--color-black-01) 10px 10px 60px;
 }
-
+                            /*      Desing du Flèche ver le bas      */
 .fleche {
     display: block;
     margin: auto;
     width: 80px;
-    padding-top: 320px;
+    padding-top: 230px;
+}
+                            /*      Desing du section Batman au CINEMA      */
+#Batman_cinema{
+    padding-top: 49px;
+}
+
+.personnage{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
 }
