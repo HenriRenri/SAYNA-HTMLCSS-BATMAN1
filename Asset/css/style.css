@@ -203,3 +203,27 @@ li{
     padding: 40px;
 
 }
+                            /*      Desing du section NÉMÉSIS      */
+.nemesis{
+    display: flex;
+    align-items: center;
+}
+
+.nemesis_img{
+    width: 230px;
+    height: auto;
+}
+                            /*      Desing du section ALLIÉS      */
+.allies{
+    padding-top: 60px;
+}
+
+.allies_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 178rem;
+    z-index: 99;
+}
