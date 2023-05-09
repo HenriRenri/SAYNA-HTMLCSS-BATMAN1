@@ -16,13 +16,14 @@
 :root{
     --color-yellow-01: #ffff00;
     --color-yellow-02: #f8f184;
-    --color-blue: #19587d75;
+    --color-blue: #19587d46;
     --color-red-01: #b11313;
     --color-red-02: #890009;
     --color-black-01: #000000;
     --color-black-02: #0d0e098c;
     --color-gray-01: #c4c4c4a2;
     --color-gray-02: #eddebfe0;
+    --color-gray-02_bg: #eddebf38;
     --color-white: #ffffff;
     --color-border: #bcbbbd13;
 }
@@ -238,3 +239,75 @@ li{
     width: 100%;
     height: auto;
 }
+
+                            /*      Desing du section League de Justice      */
+#Multimedia button{
+    position: relative;
+    top: 150px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#Multimedia button.right{
+    left: 92%;
+}
+
+.img_slide{
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_slider{
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color-border);
+}
+
+.text_slider{
+    padding: 15px;
+    background: linear-gradient(
+        160deg,
+        var(--color-gray-02_bg),
+        var(--color-blue) 60%
+    );
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#Multimedia h2, 
+#Multimedia .span_1{
+    font-family: 'Space_Grotesk_Regular';
+    font-size: 22px;
+    padding-top: 5px;
+
+}
+
+#Multimedia span{
+    font-family: 'Rajdhani';
+    font-size: 22px;
+    padding-top: 5px;
+}
+
+#Multimedia .yellow{
+    color: var(--color-yellow-01);
+    font-family: 'Space_Grotesk_Bold';
+    
+}
+
+.text_slider p{
+    font-family: 'Space_Grotesk_Regular';
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#Multimedia .video{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-bottom: 50px;
+}
+                            /*      Desing du section League de Justice      */
