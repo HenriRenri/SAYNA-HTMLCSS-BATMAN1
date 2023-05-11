@@ -182,42 +182,43 @@
                                     <!-- Section Formulaire !-->
         <section id="Contact">
             <div class="container">
-              <div class="global">
+                <div class="global">
                     <h2>PRENOM CONTACT</h2>
                     <form action="">
-                        <label class="titre_contact">ADRESS MAIL</label>
-                        <input type="email" name="email" id="email" placeholder="Adresse mail">
-                        <label class="titre_contact">NEWSLETTER</label>
-                        <p class="text_news">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
-                        <input type="checkbox" class="form-check-input" name="check" id="check" value="checkedValue"/>
+                      <label class="titre_input">ADRESS MAIL</label>
+                        <input type="email" name="email" id="email" placeholder="Adresse email">
+                        <label class="titre_input">NEWSLETTER</label>
+                        <p class="news_text">
+                          En cochant cette case vous acceptez de recevoir l’actualité
+                          concernant les aventures de Batman :
+                          <input type="checkbox" class="form-check-input" name="check" id="check" value="checkedValue"/>
                         </p>
-                        <div class="menu">
-                            <select id="dropdownlist" name="dropdownlist">
-                                <option selected="selected">Choisissez la fréquence à laquelle vous souhaitez recevoirvotre newsletter</option>
-                                <option class="c-bg" value="Quotidiennement">Quotidienne</option>
-                                <option class="c-bg" value="hebdomadaire">Hebdomadaire</option>
-                                <option class="c-bg" value="Mensuel">Tous les mois</option>
-                                <option class="c-bg" value="annuel">Tous les an</option>
-                            </select>
+                        <div class="menu-btn">
+                          <select id="dropdownlist" name="dropdownlist">
+                            <option selected="selected">Choisissez la fréquence à laquelle vous souhaitez recevoirvotre newsletter</option>
+                            <option class="c-bg" value="Quotidiennement">Quotidienne</option>
+                            <option class="c-bg" value="hebdomadaire">Hebdomadaire</option>
+                            <option class="c-bg" value="Mensuel">Tous les mois</option>
+                            <option class="c-bg" value="annuel">Tous les an</option>
+                          </select>
                         </div>
-                            <br/>
+                      <br/>
                         <div class="news">Souhaitez vous recevoir des news</div>
-                            <div class="group_btn">
-                              <input type="radio" name="choix" id="film" />
-                              <label class="btnform" for="film">Des film</label>
-                              <input type="radio" name="choix" id="comics"/>
-                              <label class="btnform" for="comics">Des comics</label>
-                              <input type="radio" name="choix" id="tout"/>
-                              <label class="btnform" for="tout">De tout</label>
-                            </div>
-                            <span class="titre_contact">MESSAGE</span>
-                            <textarea rows="1" name="msg" id="msg" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                            <input class="btn" type="submit" value="CONFIRMER"/>
+                        <div class="btn-group">
+                          <input type="radio" name="choix" id="film" />
+                          <label class="btnform" for="film">Des film</label>
+                          <input type="radio" name="choix" id="comics"/>
+                          <label class="btnform" for="comics">Des comics</label>
+                          <input type="radio" name="choix" id="tout"/>
+                          <label class="btnform" for="tout">De tout</label>
                         </div>
+                        <span class="titre_input">MESSAGE</span>
+                        <textarea rows="1" name="msg" id="msg" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                        <input class="btn" type="submit" value="CONFIRMER"/>
                     </form>
                 </div>
             </div>
-        </section>
+          </section>
     </main>
 </body>
 </html>
