@@ -485,6 +485,25 @@ form{
     font-size: 12px;
 }
 
+.blem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .double_cote_fermer{
     float: right;
+}
+                            /*      Desing du section Formulaire      */
+.footer_text{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.media_social{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
