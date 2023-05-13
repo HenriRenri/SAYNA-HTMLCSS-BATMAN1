@@ -16,6 +16,7 @@
 :root{
     --color-yellow-01: #ffff00;
     --color-yellow-02: #f8f184;
+    --color-Bleu-Bleu: #0000ff;
     --color-blue: #19587d46;
     --color-red-01: #b11313;
     --color-red-02: #890009;
@@ -37,6 +38,17 @@
 body{
     background-color: var(--color-black-01);
     color: var(--color-white);
+}
+
+.fade-in-left{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-left:active{
+    opacity: 1;
+    transform: translate(0);
 }
 
 .container{
@@ -95,7 +107,9 @@ nav{
 }
 
 .logo:hover,
-.logo_social img:hover{
+.logo_social img:hover,
+.social_media:hover,
+.social:hover{
     filter: invert(20%) sepia(80%) saturate(4740%) hue-rotate(340deg)
     brightness(160%) contrast(140%);
     transform: scale(1.1);
@@ -132,7 +146,7 @@ li{
     align-items: center;
     position: fixed;
     right: 2.45%;
-    top: 250px;
+    top: 25%;
     z-index: 100;
 }
 
@@ -250,7 +264,11 @@ li{
 }
 
 #Multimedia button.right{
-    left: 92%;
+    left: 88%;
+}
+
+#Multimedia button.left{
+    left: 40px;
 }
 
 .img_slide{
@@ -307,7 +325,7 @@ li{
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    margin-left: 45px;
     padding-bottom: 160px;
 }
                             /*      Desing du section Formulaire      */
@@ -397,20 +415,18 @@ form{
 
 #Contact .global .menu-btn #dropdownlist {
     width: 100%;
-    background-color: transparent;
+    background: transparent;
     border: none;
     color: var(--color-white);
     font-size: 16px;
     font-weight: 100;
     margin-top: 15px;
-    font-family: "space_Grotesk_Reglar";
-}
-
-#Contact .global .menu-btn .dropdownlist{
-    background: linear-gradient(60deg,
-    var(--color-gray-02_bg),
-    var(--color-blue) 80%);
-}
+    font-family: "space-grotesk";
+  }
+  
+  #Contact .menu-btn #dropdownlist select {
+      background: blue;
+  }
 
 #Contact .global .btn-group label.btnform {
     width: 150px;
@@ -474,7 +490,7 @@ form{
 }
 
 .text_citation{
-    font-family: "Radjani";
+    font-family: "Space_Grotesk_Regular";
     font-size: 18px;
 }
 
@@ -487,15 +503,33 @@ form{
 
 .blem{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.cercle_milieux {
+    width: 15px;
+    height: 15px;
+    background: var(--color-blue);
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.cercle {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-blue);
+    margin: 5px;
+    border-radius: 50%;
 }
 
 .double_cote_fermer{
     float: right;
 }
-                            /*      Desing du section Formulaire      */
+                            /*      Desing Footer      */
 .footer_text{
+    font-family: "Space_Grotesk_Regular";
+    font-size: 12px;
     padding-top: 200px;
     text-align: center;
     font-size: 12px;
@@ -506,4 +540,7 @@ form{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 100px;
+}
+.social{
+    padding: 2%;
 }
