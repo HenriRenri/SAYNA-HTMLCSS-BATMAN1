@@ -28,7 +28,7 @@
     --color-white: #ffffff;
     --color-border: #bcbbbd13;
 }
-
+/* ---------------------------------------------Desing Général----------------------------------------- */
 *{
     margin: 0px;
     padding: 0px;
@@ -83,7 +83,24 @@ body{
     text-align: center;
     margin-bottom: 40px;
 }
-                            /*      Desing Barre de navigation      */
+/* ---------------------------------------------Responsive Général----------------------------------------- */
+@media (max-width: 768px) {
+    .titre{
+        padding: 40px;
+        font-family: 'Space_Grotesk_Bold';
+        font-size: 26px;
+    }
+    
+    .description{
+        width: 100%;
+        padding: 40px;
+        text-align: justify;
+        line-height: 22px;
+        font-family: 'Space_Grotesk_Regular';
+        font-size: 18px;
+    }   
+}
+/*-----------------------------------Desing Barre de navigation--------------------------------------------*/
 #header{
     height: 900px;
     background-image: url(../Illustrations/Bathome1.png);
@@ -138,8 +155,23 @@ ul a:active{
 li{
     list-style: none;
 }
-
-                            /*      Desing Scroll Barre      */
+ /*----------------------------------------Responsive du Header-----------------------------------------------*/
+@media (max-width: 768px) {
+    #header{
+        margin-bottom: -92px;
+    }
+    nav .logo{
+        width: 60%;
+        height: auto;
+    }
+    nav ul a{
+        text-decoration: underline;
+        font-family: 'Rajdhani';
+        font-size: 26px;
+        color: var(--color-white);
+    }
+}
+/*------------------------------------------Desing Scroll Barre--------------------------------------------*/
 .scroll_bar{
     display: flex;
     flex-direction: column;
@@ -158,7 +190,27 @@ li{
     margin: 45px;
     z-index: 100;
 }
-                            /*      Desing Contenue header      */
+ /*----------------------------------------Responsive du scroll Barr----------------------------------------*/
+@media(max-width: 720px) {
+    .scroll_bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: -7%;
+        top: 25%;
+        z-index: 100;
+    }
+    .logo_social img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35px;
+        margin: 45px;
+        z-index: 100;
+    }
+}
+/*------------------------------------Desing Contenue du Barre de navigation---------------------------------*/
 .content{
     width: 50%;
     margin: auto;
@@ -173,7 +225,24 @@ li{
     font-size: 21px;
     font-family: 'Space_Grotesk_Regular';
 }
-                            /*      Desing les 2 buttons      */
+/*------------------------------------Desing Contenue du Barre de navigation---------------------------------*/
+@media (max-width: 768px) {
+    .content{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 120px;
+    }
+    .content p{
+        font-size: 18px;
+        font-family: 'Space_Grotesk_Regular';
+    }
+}
+/*------------------------------------Desing Button---------------------------------*/
+
 .btn{
     font-family: 'Rajdhani';
     font-size: 20px;
@@ -185,8 +254,8 @@ li{
     color: var(--color-white);
     background: linear-gradient(
         70deg,
-        rgba(245, 220, 180, 0.493) 40%,
-        rgba(140, 0, 7, 0.37) 60%
+        rgba(245, 220, 180, 0.493),
+        rgba(140, 0, 7, 0.37) 100%
     );
 }
 
@@ -206,14 +275,23 @@ li{
     transition: transform 0.9s ease-in-out;
     transform: scale(1.1);
 }
-                            /*      Desing du Flèche ver le bas      */
+/*--------------------------------------------Desing Flèche down---------------------------------------------*/
 .fleche {
     display: block;
     margin: auto;
     width: 80px;
     padding-top: 230px;
 }
-                            /*      Desing du section Batman au CINEMA      */
+/*--------------------------------------------Responsive Flèche down-----------------------------------------*/
+@media (max-width: 768px) {
+    .fleche {
+        display: block;
+        margin: auto;
+        width: 80px;
+        padding-top: 180px;
+    }
+}
+/*-------------------------------------Desing Section Batman au Cinéma---------------------------------------*/
 #Batman_cinema{
     padding-top: 49px;
 }
@@ -224,7 +302,15 @@ li{
     padding: 40px;
 
 }
-                            /*      Desing du section NÉMÉSIS      */
+/*--------------------------------------------Responsive Section Batman au Cinema-----------------------------------------*/
+@media (max-width: 768px){
+    .personnage{
+        display: block;
+        justify-content: space-between;
+        padding: 40px;
+    }
+}
+/*----------------------------------------Desing Section Némésis---------------------------------------------*/
 .nemesis{
     display: flex;
     align-items: center;
@@ -234,7 +320,7 @@ li{
     width: 230px;
     height: auto;
 }
-                            /*      Desing du section ALLIÉS      */
+ /*----------------------------------------Desing Section Allié-----------------------------------------------*/
 .allies{
     padding-top: 60px;
 }
@@ -248,13 +334,26 @@ li{
     top: 178rem;
     z-index: 99;
 }
-                            /*      Desing du section League de Justice      */
+ /*----------------------------------------Desing Section Allié-----------------------------------------------*/
+@media (max-width: 768px) {
+    .allies_img{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        position: absolute;
+        top: 349.3rem;
+        opacity: 0.8;
+        z-index: 99;
+    }
+}
+ /*----------------------------------------Desing League de justice--------------------------------------------*/
 .justice_img{
     width: 100%;
     height: auto;
 }
 
-                            /*      Desing du section Multimedia      */
+ /*-------------------------------------Desing Section Multie Media-----------------------------------------*/
+
 #Multimedia button{
     position: relative;
     top: 150px;
@@ -328,7 +427,57 @@ li{
     margin-left: 45px;
     padding-bottom: 160px;
 }
-                            /*      Desing du section Formulaire      */
+ /*-------------------------------------Desing Section Multie Media-----------------------------------------*/
+@media (max-width: 768px) {
+    #Multimedia button{
+        position: relative;
+        top: 150px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #Multimedia button.right{
+        left: 88%;
+    }
+    
+    #Multimedia button.left{
+        left: 40px;
+    }
+    .img_slide{
+        width: 90%;
+        margin: 40px auto;
+        display: block;
+        justify-content: space-between;
+    }
+    .text_slider{
+        padding: 15px;
+        background: linear-gradient(
+            160deg,
+            var(--color-gray-02_bg),
+            var(--color-blue) 60%
+        );
+        border-radius: 20px;
+        margin-top: 257px;
+    }
+    .img_slider{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 538rem;
+        padding-top: 137px;
+        left: 35%;
+    }
+    #Multimedia .video img{
+        width: 95%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 180px;
+        padding-bottom: 50px;
+    }
+}
+/*--------------------------------------Desing Section Formulaire-------------------------------------------*/
 #Contact{
     padding: 65px auto;
     background: linear-gradient(120deg, 
@@ -478,7 +627,7 @@ form{
     font-size: 15px;
 }
 
-                            /*      Desing du section Formulaire      */
+ /*----------------------------------------Desing Section Citation-----------------------------------------------*/
 #Citation .citation{
     padding: 90px;
 }
@@ -526,7 +675,7 @@ form{
 .double_cote_fermer{
     float: right;
 }
-                            /*      Desing Footer      */
+ /*----------------------------------------Desing Footer-----------------------------------------------*/
 .footer_text{
     font-family: "Space_Grotesk_Regular";
     font-size: 12px;
@@ -544,3 +693,6 @@ form{
 .social{
     padding: 2%;
 }
+ /*----------------------------------------Realiser 
+                                                    par 
+                                                       Nal'aina-----------------------------------------------*/
