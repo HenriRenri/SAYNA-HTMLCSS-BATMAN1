@@ -438,11 +438,11 @@ li{
     }
     
     #Multimedia button.right{
-        left: 88%;
+        left: 75%;
     }
     
     #Multimedia button.left{
-        left: 40px;
+        left: 20px;
     }
     .img_slide{
         width: 90%;
@@ -458,23 +458,24 @@ li{
             var(--color-blue) 60%
         );
         border-radius: 20px;
-        margin-top: 257px;
+        margin-top: 287px;
+        margin-bottom: 160px;
     }
     .img_slider{
         width: 100%;
         height: auto;
         position: absolute;
-        top: 538rem;
+        top: 541rem;
         padding-top: 137px;
         left: 35%;
     }
     #Multimedia .video img{
-        width: 95%;
+        width: 80%;
+        position: absolute;
+        right: 10%;
         display: block;
-        justify-content: center;
-        align-items: center;
-        padding-top: 180px;
-        padding-bottom: 50px;
+        top: 589rem;
+        border-radius: 3%;
     }
 }
 /*--------------------------------------Desing Section Formulaire-------------------------------------------*/
@@ -588,7 +589,8 @@ form{
         var(--color-blue)) 1;
     font-size: 20px;
     padding: 10px;
-    margin-top: 15px;
+        margin-top: 60px;
+        margin-top: 15px;
     text-align: center;
     cursor: pointer;
 }
@@ -626,7 +628,49 @@ form{
     color: var(--color-gray-02);
     font-size: 15px;
 }
-
+ /*-------------------------------------Responsive Section Multie Media-----------------------------------------*/
+@media (max-width: 768px) {
+    #Contact{
+        padding: 35px auto;
+        background: linear-gradient(120deg, 
+        var(--color-gray-02_bg),
+        var(--color-blue) 80%);
+    }
+    #Contact .global{
+        width: 95%;
+        margin: auto;
+    }
+    #Contact .global h2 {
+        font-family: "Space_Grotesk_Bold";
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        letter-spacing: 4px;
+        padding-top: 60px;
+    }
+    #Contact .news_text{
+        width: 90%;
+        font-family: "Space_Grotesk_Regular";
+        font-size: 14px;
+        padding-top: 40px;
+    }
+    #Contact .global .btn-group label.btnform {
+        width: 100px;
+        border: 2px solid;
+        -o-border-image: linear-gradient(45deg, 
+            var(--color-gray-02_bg), 
+            var(--color-blue)) 1;
+        border-image: linear-gradient(45deg, 
+            var(--color-gray-02_bg), 
+            var(--color-blue)) 1;
+        font-size: 16px;
+        padding: 10px;
+            margin-top: 60px;
+            margin-top: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
  /*----------------------------------------Desing Section Citation-----------------------------------------------*/
 #Citation .citation{
     padding: 90px;
@@ -674,6 +718,20 @@ form{
 
 .double_cote_fermer{
     float: right;
+}
+ /*----------------------------------------Responsive Section Citation-----------------------------------------------*/
+@media (max-width: 768px) {
+    .corp_citation{
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .cote_1{
+        width: 30%;
+    }
+    .cote{
+        width: 60%;
+    }
 }
  /*----------------------------------------Desing Footer-----------------------------------------------*/
 .footer_text{
